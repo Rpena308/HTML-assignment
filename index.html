@@ -1,10 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
     <head>
-        <title>Start Page</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>A Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <header>
+            <h1>A Form</h1>
+        </header>
+        <section id="form">
+            <h2>Form Section</h2>
+            <form>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email"><br>
+                <label for="pwd">Password:</label><br>
+                <input type="password" id="pwd" name="pwd">
+                <label for="lang" id="lang">Language</label>
+                <select id="lang" name="langs">
+                    <option value="eng">English</option>
+                    <option value="span">Spanish</option>
+                    <option value="fr">French</option>
+                </select>
+                    <fieldset>
+                        <legend>Color Choice</legend>
+                        <label>Choose one option: </label>         
+                        <input type="radio"  name="fontSizeControl"  id="red"
+                               value="red"  checked="checked" />
+                        <label for="red">Red</label>
+                        <input type="radio"  name="fontSizeControl"  id="blue"
+                               value="blue" />
+                        <label for="blue">Blue</label>
+                        <input type="radio"  name="fontSizeControl"  id="yellow"
+                               value="yellow" />
+                        <label for="yellow">Yellow</label>
+                    </fieldset>    
+                <button>Submit</button>
+                <button>Reset</button>
+            </form> 
+        </section>
+        <section>
+            <h2>Other Section</h2>
+            <img src="images/black.png" alt="Black Box">
+            <p>This is a link to a more styled version of this page: 
+                <a href="index.html">Better Page</a></p>
+        </section>
+        <footer>
+            <p>Copyright &COPY;2021</p>
+        </footer>
     </body>
 </html>
